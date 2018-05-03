@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+
+
+  <title>Editor</title>
+</head>
+<body>
+  <div class="container">
+
+      <div class="canvas " id = "canvas">
+
+        <div class="toolbar-color " id = "toolbar-color">
+
+          <div contenteditable="true" class=" color-code" id="color-code" type="text">
+            #FFFFFF
+          </div>
+
+          <div class="color-preview color-preview--background" id="color-preview--background">
+
+          </div>
+
+
+        </div>
+      <div class="header">
+
+
+      <menu class="screen-state-menu">
+
+        <div class="icons screen-icons screen-icons-square" id = "square" >
+
+        </div>
+
+        <div class="icons screen-icons screen-icons-horizontal" id ="horizontal" >
+
+        </div>
+
+        <div class="icons screen-icons screen-icons-vertical" id = "vertical" >
+
+        </div>
+
+
+      </menu>
+
+      <menu class="buttons">
+
+        <button class="button buttons__headline" id="headline-text-button" >
+          <div class="icons headline-icon">
+          </div>
+
+          <span>
+            Headline
+          </span>
+        </button>
+
+        <button class="button buttons__main-text" id ="main-text-button">
+          <div class="icons main-text-icon" >
+          </div>
+          <span>
+              Main text
+          </span>
+        </button>
+
+        <button  class="button buttons__image"   onclick="">
+          <div class="icons image-icon" >
+          </div>
+          <span>
+          Image
+        </span>
+        <input type="file" name="files[]" id="image-loader" >
+
+      </button>
+
+
+        <button class="button buttons__download">
+            <div class="icons header-icons save-icon" id="download">
+          <img src="icons/save.png" alt="">
+        </div>
+          <a href="">
+
+          </a>
+        </button>
+
+        </menu>
+
+      </div>
+
+
+
+
+
+    <svg class="svg-form" id="svg-form" contenteditable="true" viewBox="0 0 740 510" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+      <defs>
+          <style>
+
+          </style>
+          <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="740" height="510">
+         <rect id="rectangle" x="-2" y="-2" width="740" height="510" fill="white">
+         </rect>
+         <use xlink:href="#path-1" fill="black"></use>
+          </mask>
+      </defs>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Desktop---Select-bg" transform="translate(-86.000000, -181.000000)">
+                <g id="canvas---selected" transform="translate(81.000000, 176.000000)">
+                    <use stroke="#cbdbf0" mask="url(#mask-2)" stroke-width="4" stroke-dasharray="5" xlink:href="#path-1"></use>
+                    <rect id="canvas-rect" fill="#FFFFFF" fill-rule="evenodd" x="5" y="5" width="740" height="496" rx="2"></rect>
+                </g>
+            </g>
+        </g>
+        <div class="toolbar-text" id = "toolbar-text">
+
+          <div class="icons editing-icons text-resize" >
+
+          </div>
+
+
+          <div class="icons editing-icons align-left" id ="align-left" >
+
+          </div>
+
+          <div class="icons editing-icons align-center" id = "align-center">
+
+          </div>
+
+          <div class="icons editing-icons align-right" id ="align-right" >
+          </div>
+
+          <div class="color-preview color-preview--text" id="color-preview--text">
+
+          </div>
+
+        </div>
+
+    </svg>
+
+</div>
+
+  </div>
+
+  </div>
+  <script src="build/bundle.js" type="text/javascript">
+
+  </script>
+
+</body>
+</html>
